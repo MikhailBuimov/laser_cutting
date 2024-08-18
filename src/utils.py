@@ -9,8 +9,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler, QuantileTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score
-from sklearn.linear_model import LinearRegression
-
+from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -222,3 +221,28 @@ def print_grafs(data, features, n_cols):
             ax[row, col].set_xticklabels(ax[row, col].get_xticklabels(), rotation=90)
     plt.tight_layout()
     plt.show()
+def get_and_print_metrics(y_pred, y_true):
+    # Вычисление RMSE
+    rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+    print(f"RMSE: {rmse}")
+    # Вычисление MAPE
+    mape = mean_absolute_percentage_error(y_true, y_pred)
+    print(f"MAPE: {mape * 100:.2f}%")
+    
+    def smape(y_true, y_pred):
+        return 100 * np.mean(2 * np.abs(y_pred - y_true) / (np.abs(y_true) + np.abs(y_pred)))
+    # Вычисление SMAPE
+    smape_value = smape(y_true, y_pred)
+    print(f"SMAPE: {smape_value:.2f}%")
+    
+    r2 = r2_score(y_true, y_pred)
+    print(f"R^2: {r2:.2f}")
+    
+    absolute_percentage_error = np.abs((y_true - y_pred) / y_true)
+    percentage_within = np.mean(absolute_percentage_error <= 0.20) * 100
+    print(f"Процент значений с ошибкой не более 20%: {percentage_within:.2f}%")
+    return {'rmse':rmse,
+           'mape':mape,
+           'smape':smape_value,
+           'R^2':r2,
+           'percentage_within_20': percentage_within}s
