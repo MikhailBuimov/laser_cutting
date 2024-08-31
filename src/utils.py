@@ -8,8 +8,11 @@ from sklearn.impute import KNNImputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler, QuantileTransformer
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score
+from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score, make_scorer
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet
+from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import make_pipeline
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -241,8 +244,14 @@ def get_and_print_metrics(y_pred, y_true):
     absolute_percentage_error = np.abs((y_true - y_pred) / y_true)
     percentage_within = np.mean(absolute_percentage_error <= 0.20) * 100
     print(f"Процент значений с ошибкой не более 20%: {percentage_within:.2f}%")
+    
+    # Вычисление WAPE
+    wape = np.sum(np.abs(y_true - y_pred)) / np.sum(np.abs(y_true)) * 100
+    print(f"WAPE: {wape:.2f}%")
+    
     return {'rmse':rmse,
            'mape':mape,
            'smape':smape_value,
            'R^2':r2,
-           'percentage_within_20': percentage_within}s
+           'percentage_within_20': percentage_within,
+           'wape': wape}
