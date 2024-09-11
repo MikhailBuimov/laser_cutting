@@ -1,1 +1,5 @@
-/laser_cutting/
+ipynb_checkpoints/
+__pycache__/
+laser_cutting/
+.gitignore/
+.ipynb_checkpoints/
