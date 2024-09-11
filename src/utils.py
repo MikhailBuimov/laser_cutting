@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 from datetime import datetime, time, timedelta
 import re
+import mlflow
+import json
+
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import KNNImputer
@@ -239,7 +242,7 @@ def get_and_print_metrics(y_pred, y_true):
     print(f"SMAPE: {smape_value:.2f}%")
     
     r2 = r2_score(y_true, y_pred)
-    print(f"R^2: {r2:.2f}")
+    print(f"R2: {r2:.2f}")
     
     absolute_percentage_error = np.abs((y_true - y_pred) / y_true)
     percentage_within = np.mean(absolute_percentage_error <= 0.20) * 100
@@ -252,6 +255,6 @@ def get_and_print_metrics(y_pred, y_true):
     return {'rmse':rmse,
            'mape':mape,
            'smape':smape_value,
-           'R^2':r2,
+           'R2':r2,
            'percentage_within_20': percentage_within,
            'wape': wape}

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/560983206231396517/454ac292325147a29f28bf29ddbb7009/artifacts
+end_time: 1726078425404
+entry_point_name: ''
+experiment_id: '560983206231396517'
+lifecycle_stage: active
+run_id: 454ac292325147a29f28bf29ddbb7009
+run_name: puzzled-trout-688
+run_uuid: 454ac292325147a29f28bf29ddbb7009
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726078425389
+status: 3
+tags: []
+user_id: mikhail
