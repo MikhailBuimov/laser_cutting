@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/330267768111100363/4c2be34e2541488891f33c592d636677/artifacts
+end_time: 1726407513514
+entry_point_name: ''
+experiment_id: '330267768111100363'
+lifecycle_stage: active
+run_id: 4c2be34e2541488891f33c592d636677
+run_name: RandomForest
+run_uuid: 4c2be34e2541488891f33c592d636677
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726407510133
+status: 3
+tags: []
+user_id: mikhail

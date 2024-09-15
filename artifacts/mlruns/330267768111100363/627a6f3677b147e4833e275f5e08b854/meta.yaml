@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/330267768111100363/627a6f3677b147e4833e275f5e08b854/artifacts
+end_time: 1726400528474
+entry_point_name: ''
+experiment_id: '330267768111100363'
+lifecycle_stage: active
+run_id: 627a6f3677b147e4833e275f5e08b854
+run_name: DecisionTree
+run_uuid: 627a6f3677b147e4833e275f5e08b854
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726400525839
+status: 3
+tags: []
+user_id: mikhail
