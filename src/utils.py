@@ -139,7 +139,7 @@ def convert_to_seconds(time_str):
         else:
             time_obj = datetime.strptime(time_str, "%H:%M:%S")
     except ValueError as e:
-        print(f"Ошибка парсинга: {e}")
+        ##print(f"Ошибка парсинга: {e}")
         return None
     
     # Преобразование в timedelta
