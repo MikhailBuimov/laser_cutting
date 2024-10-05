@@ -1,0 +1,20 @@
+artifact_path: cutting_tree_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.16.0
+model_size_bytes: 221239
+model_uuid: 174091476bc44e8697d373f60d6c3837
+run_id: f5253dd1eedf4c72b6e5fad38f914114
+utc_time_created: '2024-10-05 12:15:55.558728'

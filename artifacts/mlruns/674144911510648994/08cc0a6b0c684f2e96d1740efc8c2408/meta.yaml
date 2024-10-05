@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/674144911510648994/08cc0a6b0c684f2e96d1740efc8c2408/artifacts
+end_time: 1728133863717
+entry_point_name: ''
+experiment_id: '674144911510648994'
+lifecycle_stage: active
+run_id: 08cc0a6b0c684f2e96d1740efc8c2408
+run_name: Lasso
+run_uuid: 08cc0a6b0c684f2e96d1740efc8c2408
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728133862141
+status: 3
+tags: []
+user_id: mikhail

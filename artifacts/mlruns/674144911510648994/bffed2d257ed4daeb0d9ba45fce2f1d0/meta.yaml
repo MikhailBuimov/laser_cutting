@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/674144911510648994/bffed2d257ed4daeb0d9ba45fce2f1d0/artifacts
+end_time: 1728132940863
+entry_point_name: ''
+experiment_id: '674144911510648994'
+lifecycle_stage: active
+run_id: bffed2d257ed4daeb0d9ba45fce2f1d0
+run_name: Linear
+run_uuid: bffed2d257ed4daeb0d9ba45fce2f1d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728132938851
+status: 3
+tags: []
+user_id: mikhail

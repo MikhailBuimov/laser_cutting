@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/674144911510648994/b92eeca071654a58a43356bee353db27/artifacts
+end_time: 1728129670010
+entry_point_name: ''
+experiment_id: '674144911510648994'
+lifecycle_stage: active
+run_id: b92eeca071654a58a43356bee353db27
+run_name: Poly
+run_uuid: b92eeca071654a58a43356bee353db27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728129668538
+status: 3
+tags: []
+user_id: mikhail

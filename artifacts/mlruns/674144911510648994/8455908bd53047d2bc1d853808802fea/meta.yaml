@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/674144911510648994/8455908bd53047d2bc1d853808802fea/artifacts
+end_time: 1728129664756
+entry_point_name: ''
+experiment_id: '674144911510648994'
+lifecycle_stage: active
+run_id: 8455908bd53047d2bc1d853808802fea
+run_name: ElasticNet
+run_uuid: 8455908bd53047d2bc1d853808802fea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728129663202
+status: 3
+tags: []
+user_id: mikhail

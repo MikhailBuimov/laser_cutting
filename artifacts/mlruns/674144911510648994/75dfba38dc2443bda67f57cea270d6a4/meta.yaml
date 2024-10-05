@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mikhail/projects/laser_cutting/artifacts/mlruns/674144911510648994/75dfba38dc2443bda67f57cea270d6a4/artifacts
+end_time: 1728133906325
+entry_point_name: ''
+experiment_id: '674144911510648994'
+lifecycle_stage: active
+run_id: 75dfba38dc2443bda67f57cea270d6a4
+run_name: Ridge
+run_uuid: 75dfba38dc2443bda67f57cea270d6a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728133904854
+status: 3
+tags: []
+user_id: mikhail
